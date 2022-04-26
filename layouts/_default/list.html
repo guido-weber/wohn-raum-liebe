@@ -1,0 +1,7 @@
+{{ define "main" }}
+<main class="artikel-liste">
+    {{ range .Pages.ByWeight }}
+        {{ .Render "artikel" }}
+    {{ end }}
+</main>
+{{ end }}

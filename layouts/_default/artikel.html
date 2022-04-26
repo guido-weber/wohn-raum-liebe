@@ -1,0 +1,14 @@
+<section class="artikel">
+    <div class="artikel-text">
+        <h3>
+            {{ .Title }}
+        </h3>
+        {{ .Content }}
+    </div>
+    <div class="artikel-bild">
+        {{ with .Resources.GetMatch "bild.jpg" }}
+        <img src="{{ .RelPermalink }}">
+  {{ end }}
+  </div>
+</section>
+  

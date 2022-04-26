@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+    <meta name="author" content="Ute und Alexander Hörner ">
+    <meta name="description" content="Wohn-Raum-Liebe wird unser neuer Einrichtungsladen in Aachen">
+    <meta name="keywords"
+        content="Möbel, Schrank, Stuhl, Tisch, Couch, Sessel, Accessoires, Lampen, Geschirr, Textilien">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display">
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+</head>
+
+<body class="bg-ral-140-80-10">
+    {{ partial "menu.html" . }}
+    <div class="bg-wrapper">
+        <div class="main-wrapper">
+            {{ block "main" . }}
+        </div>
+        </div>
+    <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+    {{ block "footer" . }}
+    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    {{ end }}
+</body>
+
+</html>
