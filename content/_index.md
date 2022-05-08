@@ -1,6 +1,9 @@
 ---
-title: "Wohn-Raum-Liebe"
+title: "Home"
 date: 2022-04-07T16:51:11+02:00
+menu:
+    main:
+        weight: 10
 draft: true
 ---
 

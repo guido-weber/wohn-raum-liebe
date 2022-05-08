@@ -1,7 +1,7 @@
 <nav class="nav-menu bg-ral-140-80-10">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-    <a class="nav-item{{if or ($currentPage.IsMenuCurrent " main" .) ($currentPage.HasMenuCurrent "main" .) }}
-        active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+        <a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+            active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
     {{ end }}
 </nav>
