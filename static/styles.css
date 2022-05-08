@@ -71,11 +71,18 @@ nav.nav-menu > a.active {
     max-width: 1000px;
 }
 
+main {
+    background-color: white;
+}
+
+main.home {
+    padding: 2rem;
+}
+
 main.artikel-liste {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    background-color: white;
 }
 
 @media (min-width: 600px) {
