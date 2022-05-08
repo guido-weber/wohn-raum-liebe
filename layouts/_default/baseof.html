@@ -21,15 +21,17 @@
 
 <body class="bg-ral-140-80-10">
     {{ partial "menu.html" . }}
+    <div class="logo-wrapper bg-ral-140-80-10">
+        <div class="logo"></div>
+    </div>
+    <div class="top-bar bg-ral-140-80-10"></div>
     <div class="bg-wrapper">
         <div class="main-wrapper">
             {{ block "main" . }}
         </div>
-        </div>
-    <!-- The part of the page that begins to differ between templates -->
+    </div>
     {{ end }}
     {{ block "footer" . }}
-    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
     {{ end }}
 </body>
 
