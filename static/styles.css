@@ -75,7 +75,7 @@ main {
     background-color: white;
 }
 
-main.home {
+main.home, main.about {
     padding: 2rem;
 }
 
