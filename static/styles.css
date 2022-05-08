@@ -58,12 +58,30 @@ nav.nav-menu {
     justify-content: space-around;
 }
 
-nav.nav-menu > a {
+nav.nav-menu a {
     color: black;
 }
 
-nav.nav-menu > a.active {
+nav.nav-menu a.active {
     text-decoration: none;
+}
+
+.nav-item > ul.sub-menu {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.nav-item:hover > ul.sub-menu, .nav-item > ul.sub-menu:hover {
+    visibility: visible;
+    display: block;
+}
+
+ul.sub-menu > li > a {
+    line-height: 150%;
 }
 
 .main-wrapper {

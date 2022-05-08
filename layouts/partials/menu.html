@@ -1,7 +1,21 @@
 <nav class="nav-menu bg-ral-140-80-10">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-        <a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-            active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+        {{ if .HasChildren }}
+            <div class="nav-item{{if $currentPage.HasMenuCurrent "main" . }} active{{end}}">
+                {{ .Name }}
+                <ul class="sub-menu bg-ral-140-80-10">
+                    {{ range .Children }}
+                        <li>
+                            <a class="submenu-item{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+                        </li>
+                    {{ end }}
+                </ul>
+            </div>
+        {{ else }}
+            <a class="nav-item{{if $currentPage.IsMenuCurrent "main" . }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">
+                {{ .Name }}
+            </a>
+        {{ end }}
     {{ end }}
 </nav>
