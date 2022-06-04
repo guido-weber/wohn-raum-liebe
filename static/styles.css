@@ -12,8 +12,8 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 115px;
-    height: 151px;
+    width: 121px;
+    height: 164px;
     z-index: 100;
 }
 
@@ -23,7 +23,8 @@ h1, h2, h3, h4, h5, h6 {
     background-size: 100%;
     background-repeat: no-repeat;
     width: 115px;
-    height: 151px;
+    height: 158px;
+    margin: 3px;
 }
 
 .top-bar {
