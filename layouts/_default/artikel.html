@@ -6,9 +6,9 @@
         {{ .Content }}
     </div>
     <div class="artikel-bild">
-        {{ with .Resources.GetMatch "bild.jpg" }}
-        <img src="{{ .RelPermalink }}">
-  {{ end }}
+        {{ with .Resources.GetMatch "*.jpg" }}
+            <img src="{{ .RelPermalink }}">
+        {{ end }}
   </div>
 </section>
   
