@@ -1,4 +1,5 @@
-<section class="artikel">
+{{ define "main" }}
+<main class="artikel">
     <div class="artikel-text">
         <h3>
             {{ .Title }}
@@ -10,4 +11,5 @@
             <img src="{{ .RelPermalink }}">
         {{ end }}
     </div>
-</section>
+    </main>
+{{ end }}
