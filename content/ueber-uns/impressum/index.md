@@ -1,5 +1,6 @@
 ---
 title: "Impressum"
+weight: 2
 ---
 
 Geschäftsführer: Ute und Alexander Hörner 
