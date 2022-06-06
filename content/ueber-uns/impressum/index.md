@@ -1,7 +1,5 @@
 ---
 title: "Impressum"
-date: 2022-04-08T18:51:37+02:00
-draft: true
 ---
 
 Geschäftsführer: Ute und Alexander Hörner 
