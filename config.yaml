@@ -1,3 +1,86 @@
 baseURL: "http://example.org/"
 languageCode: "de-de"
 title: "Wohn-Raum-Liebe"
+
+menu:
+  main:
+  - identifier: home
+    name: Home
+    url: /
+    weight: 1
+  - identifier: wohnen
+    name: Wohnen
+    weight: 2
+  - identifier: moebel
+    name: Möbel
+    url: /wohnen/moebel/
+    weight: 1
+    parent: wohnen
+  - identifier: accessoires
+    name: Accessoires
+    url: /wohnen/accessoires/
+    weight: 2
+    parent: wohnen
+  - identifier: textilien
+    name: Textilien
+    url: /wohnen/textilien/
+    weight: 3
+    parent: wohnen
+  - identifier: aufbewahrung
+    name: Aufbewahrung
+    url: /wohnen/aufbewahrung/
+    weight: 4
+    parent: wohnen
+  - identifier: gedeckter-tisch
+    name: Gedeckter Tisch
+    url: /wohnen/gedeckter-tisch/
+    weight: 5
+    parent: wohnen
+  - identifier: kerzen
+    name: Kerzen
+    url: /wohnen/kerzen/
+    weight: 6
+    parent: wohnen
+  - identifier: nuetzliches
+    name: Nützliches
+    url: /wohnen/nuetzliches/
+    weight: 7
+    parent: wohnen
+  - identifier: lampen
+    name: Lampen
+    weight: 3
+  - identifier: haengeleuchten
+    name: Hängeleuchten
+    url: /lampen/haengeleuchten/
+    weight: 1
+    parent: lampen
+  - identifier: stehleuchten
+    name: Stehleuchten
+    url: /lampen/stehleuchten/
+    weight: 2
+    parent: lampen
+  - identifier: tisch-wand
+    name: Tisch- & Wandleuchten
+    url: /lampen/tisch-wand/
+    weight: 3
+    parent: lampen
+  - identifier: lichterketten
+    name: Lichterketten & Co
+    url: /lampen/lichterketten/
+    weight: 4
+    parent: lampen
+  - identifier: leuchtmittel
+    name: Leuchtmittel
+    url: /lampen/leuchtmittel/
+    weight: 5
+    parent: lampen
+  - identifier: papeterie
+    name: Papeterie
+    weight: 4
+  - identifier: geschenke
+    name: Geschenke
+    weight: 5
+  - identifier: about
+    name: Über uns
+    url: /ueber-uns/
+    weight: 6
