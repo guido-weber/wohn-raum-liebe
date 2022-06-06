@@ -10,6 +10,7 @@ menu:
     weight: 1
   - identifier: wohnen
     name: Wohnen
+    url: /wohnen/
     weight: 2
   - identifier: moebel
     name: Möbel
@@ -48,6 +49,7 @@ menu:
     parent: wohnen
   - identifier: lampen
     name: Lampen
+    url: /lampen/
     weight: 3
   - identifier: haengeleuchten
     name: Hängeleuchten
@@ -76,16 +78,20 @@ menu:
     parent: lampen
   - identifier: papeterie
     name: Papeterie
+    url: /papeterie/
     weight: 4
   - identifier: schreibgeraete
     name: Schreibgeräte
+    url: /papeterie/schreibgeraete/
     weight: 1
     parent: papeterie
   - identifier: geschenke
     name: Geschenke
+    url: /geschenke/
     weight: 5
   - identifier: fix-und-fertig
     name: Fix & Fertig
+    url: /geschenke/fix-und-fertig/
     weight: 1
     parent: geschenke
   - identifier: about
