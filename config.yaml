@@ -77,9 +77,17 @@ menu:
   - identifier: papeterie
     name: Papeterie
     weight: 4
+  - identifier: schreibgeraete
+    name: Schreibgeräte
+    weight: 1
+    parent: papeterie
   - identifier: geschenke
     name: Geschenke
     weight: 5
+  - identifier: fix-und-fertig
+    name: Fix & Fertig
+    weight: 1
+    parent: geschenke
   - identifier: about
     name: Über uns
     url: /ueber-uns/
