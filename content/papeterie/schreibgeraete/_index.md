@@ -1,3 +1,3 @@
 ---
-title: "Schreibgeraete"
+title: "Schreibgeräte"
 ---
